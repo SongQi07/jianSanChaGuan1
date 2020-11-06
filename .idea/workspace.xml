@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58068ddd-8a57-4694-b12d-d3f836410b17" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1jqyzKiKNCC3lAhsEpz77EhRA8X" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58068ddd-8a57-4694-b12d-d3f836410b17" name="Default Changelist" comment="" />
+      <created>1604546177414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604546177414</updated>
+      <workItem from="1604546178512" duration="854000" />
+      <workItem from="1604552748021" duration="10603000" />
+      <workItem from="1604622800575" duration="309000" />
+      <workItem from="1604629718286" duration="372000" />
+      <workItem from="1604639269654" duration="61000" />
+      <workItem from="1604639352808" duration="31000" />
+      <workItem from="1604639429170" duration="327000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="449" y="292" key="#Notifications" timestamp="1604546379946">
+      <screen x="0" y="23" width="1680" height="969" />
+    </state>
+    <state x="449" y="292" key="#Notifications/0.23.1680.969@0.23.1680.969" timestamp="1604546379946" />
+    <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604558697445">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="578" y="279" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1604558697445" />
+    <state x="526" y="387" key="Github.CreateGistDialog" timestamp="1604546349216">
+      <screen x="0" y="23" width="1680" height="969" />
+    </state>
+    <state x="526" y="387" key="Github.CreateGistDialog/0.23.1680.969@0.23.1680.969" timestamp="1604546349216" />
+    <state x="458" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604559525067">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="458" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1604559525067" />
+    <state x="505" y="233" key="search.everywhere.popup" timestamp="1604558420224">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1604558420224" />
+  </component>
+</project>

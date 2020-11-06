@@ -1,0 +1,159 @@
+[v-cloak]{ display:none;}
+html {
+    background-color: rgba(0, 0, 0, 0.02);
+    overflow-x: hidden;
+}
+
+.complete {
+    min-height: 35.625rem;
+    margin-bottom: 3.125rem;
+}
+
+.header {
+    width: 100%;
+    height: 2.125rem;
+    font-size: 1.125rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 2.125rem;
+    width: 100%;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 13.5625rem;
+    background-color: #FFFFFF;
+}
+
+.title {
+    background-color: #FFFFFF;
+    height: 4.25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.625rem;
+}
+
+.title-top span {
+    font-size: 1.25rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    margin: auto 0;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.title-top {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.title-tom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.75rem;
+    align-items: center;
+}
+
+#title-tom1 {
+    font-size: 1rem;
+    font-family: Bahnschrift;
+    font-weight: 500;
+    color: #F22C2C;
+}
+
+.title-tom-img {
+    display: flex;
+    align-items: center;
+}
+
+.title-tom-img img {
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-right: 0.21875rem;
+}
+
+.title-tom2 {
+    font-size: 0.75rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 1.375rem;
+}
+
+.striping {
+    height: 0.3125rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.minute {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-top: 1.25rem;
+    padding-left: 0.8125rem;
+    padding-right: 0.8125rem;
+}
+
+.minute span {
+    font-size: 0.875rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.25rem;
+}
+
+.minute img {
+    width: 100%;
+    height: 7.0625rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.foot {
+    width: 100%;
+    height: 3.0625rem;
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.8125rem;
+}
+
+.foot-left {
+    width: 100%;
+    height: 3.0625rem;
+    display: flex;
+    align-items: center;
+}
+
+.foot-left img {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: 0.625rem;
+    border-radius: 50%;
+}
+
+.foot-left span {
+    font-size: 0.875rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+}
+
+.foot button {
+    width: 55px;
+    height: 20px;
+    background: #EBF0FF;
+    border-radius: 0.625rem;
+    color: #3970FB;
+    font-size: 0.625rem;
+}

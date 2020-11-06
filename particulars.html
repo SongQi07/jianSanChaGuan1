@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<link rel="stylesheet" href="./css/particulars.css">
+		<link rel="stylesheet" href="./css/overall.css">
+		<link rel="stylesheet" href="./css/swiper-bundle.css">
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<script src="./js/swiper-bundle.js"></script>
+		<title>内容详情</title>
+	</head>
+	<body>
+		<div class="complete">
+			<div class="header">
+				<p>内容详情</p>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="./imgs/banner@2x.png" alt=""></div>
+					<div class="swiper-slide"><img src="./imgs/banner@2x.png" alt=""></div>
+					<div class="swiper-slide"><img src="./imgs/banner@2x.png" alt=""></div>
+					<div class="swiper-slide"><img src="./imgs/banner@2x.png" alt=""></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="title">
+				<div class="title-top">
+					<span id="title"></span>
+				</div>
+				<div class="title-tom">
+					<span id="title-tom1">¥<span id="price"></span></span>
+					<div class="title-tom-img">
+						<img src="imgs/icon-home-time.png" alt="">
+						<span class="title-tom2" id="friendlyDate"></span>
+					</div>
+				</div>
+			</div>
+			<div class="striping"></div>
+			<div class="minute">
+				<span id="content"></span>
+				<div id="img">
+
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="foot-left">
+				<div id="user_img"></div>
+				<span id="userName"></span>
+			</div>
+			<div class="foot-right">
+				<button @click="qqId" type="button" id="qqID">复制QQ</button>
+			</div>
+		</div>
+	</body>
+	<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/clipboard.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var mySwiper = new Swiper('.swiper-container', {
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'fraction',
+			},
+			autoplay: true,
+			loop: true
+		})
+		var qq;
+		$("#qqID").click(function() {
+			var clipboard = new ClipboardJS('#qqID', {
+				text: function() {
+					return qq;
+				}
+			});
+			mui.toast('复制成功！', {
+				duration: '4000ms',
+				type: 'div'
+			});
+		});
+
+		//获取URL参数
+		var id = getUrlParam('id');
+
+		function getUrlParam(name) {
+				const reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				const r = window.location.search.substr(1).match(reg);
+			loadCotent();
+				if (r != null) return unescape(r[2]);
+				return null;
+		}
+		
+
+		function loadCotent() {
+			// 发送 ajax
+			$.ajax({
+				url: "http://j3cg.lnkj6.com/api.php/Index/getGameAccountInfo",
+				data: {
+					id:28
+				},
+				type: "POST",
+				dataType: "json",
+				contentType: "application/x-www-form-urlencoded",
+				success: function(res) {
+					try{
+						var title = res.data.title;
+						var friendlyDate = res.data.friendlyDate;
+						var price = res.data.price;
+						var content = res.data.content;
+						var cover = res.data.cover_img;
+						var user = res.data.user;
+						var userName = user.nick_name;
+						var user_img = user.head_pic;
+						qq = user.qq;
+					}catch(Error){
+						
+					}
+					document.getElementById('title').innerHTML = title;
+					document.getElementById('content').innerHTML = content;
+					document.getElementById('friendlyDate').innerHTML = friendlyDate;
+					document.getElementById('price').innerHTML = price;
+					document.getElementById('img').innerHTML = "<img src='" + cover + "'>";
+					document.getElementById('userName').innerHTML = userName;
+					document.getElementById('user_img').innerHTML = "<img src='" + user_img + "'>";
+				}
+			});
+		}
+	</script>
+</html>
